@@ -1,0 +1,115 @@
+<h1>Listing blogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>BeautyTips Demo Page</title>
+  <meta name="author" content="Jeff Robbins">
+  
+  
+  
+
+  <div class="example" id="image-content">
+      <h3>Hover Effect</h3>
+      <div class="ie-fix"><div type="text" id="example16" class="target">The lazy gym type</div></div>
+      <div class="desc">
+        <p>If you hover over the box, it will load a picture. You can customize the text in the box and the picture that is loaded.</p>
+        <p>This is useful for photo galleries to enlarge a picture when it is hovered over, for stores that would like to append an image to some text, and a myriad of other uses </p>
+        <div class="source">
+          <div class="js">$('#example16').bt('<img src="mr-potato-head-on-a-treadmill.jpg" width="200" height="197" />', 
+{
+  width: 200, 
+  fill: 'white', 
+  cornerRadius: 20, 
+  padding: 20,
+  strokeWidth: 1,
+  trigger: ['mouseover', 'click']
+});</div>
+        </div>
+      </div>
+    </div> 
+    <div class="example" id="image-content">
+      <h3>Hover Effect</h3>
+      <div class="ie-fix"><div type="text" id="example16" class="target">The gym bro</div></div>
+      <div class="desc">
+        <p>If you hover over the box, it will load a picture. You can customize the text in the box and the picture that is loaded.</p>
+        <p>This is useful for photo galleries to enlarge a picture when it is hovered over, for stores that would like to append an image to some text, and a myriad of other uses </p>
+        <div class="source">
+          <div class="js">$('#example16').bt('<img src="gymscreamer.jpg" width="200" height="197" />', 
+{
+  width: 200, 
+  fill: 'white', 
+  cornerRadius: 20, 
+  padding: 20,
+  strokeWidth: 1,
+  trigger: ['mouseover', 'click']
+});</div>
+        </div>
+      </div>
+    </div> 
+    <div class="example" id="image-content">
+      <h3>Hover Effect</h3>
+      <div class="ie-fix"><div type="text" id="example16" class="target">The Gym Chiller</div></div>
+      <div class="desc">
+        <p>If you hover over the box, it will load a picture. You can customize the text in the box and the picture that is loaded.</p>
+        <p>This is useful for photo galleries to enlarge a picture when it is hovered over, for stores that would like to append an image to some text, and a myriad of other uses </p>
+        <div class="source">
+          <div class="js">$('#example16').bt('<img src="gymchiller.jpg" width="200" height="197" />', 
+{
+  width: 200, 
+  fill: 'white', 
+  cornerRadius: 20, 
+  padding: 20,
+  strokeWidth: 1,
+  trigger: ['mouseover', 'click']
+});</div>
+        </div>
+      </div>
+    </div> 
+    
+    <div class="example" id="image-content">
+      <h3>Hover Effect</h3>
+      <div class="ie-fix"><div type="text" id="example16" class="target">The precision athelete</div></div>
+      <div class="desc">
+        <p>If you hover over the box, it will load a picture. You can customize the text in the box and the picture that is loaded.</p>
+        <p>This is useful for photo galleries to enlarge a picture when it is hovered over, for stores that would like to append an image to some text, and a myriad of other uses </p>
+        <div class="source">
+          <div class="js">$('#example16').bt('<img src="precisionathlete.jpg" width="200" height="197" />', 
+{
+  width: 200, 
+  fill: 'white', 
+  cornerRadius: 20, 
+  padding: 20,
+  strokeWidth: 1,
+  trigger: ['mouseover', 'click']
+});</div>
+        </div>
+      </div>
+    </div> 
+    
+ 

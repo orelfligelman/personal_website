@@ -1,0 +1,17 @@
+<%= form_for(@madlib) do |f| %>
+  <% if @madlib.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@madlib.errors.count, "error") %> prohibited this madlib from being saved:</h2>
+
+      <ul>
+      <% @madlib.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

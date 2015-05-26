@@ -1,0 +1,65 @@
+<h1>Listing locations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @locations.each do |location| %>
+      <tr>
+        <td><%= link_to 'Show', location %></td>
+        <td><%= link_to 'Edit', edit_location_path(location) %></td>
+        <td><%= link_to 'Destroy', location, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Location', new_location_path %>
+
+  
+    <div class="example" id="google-maps">
+      <h3>The Residence of Orel M. Fligelman</h3>
+      <div class="ie-fix"><img src="gmap-pin.png" alt="gmap-pin" title="" width="19" height="32" id="example17" class="alt-target" /></div>
+      <div class="desc">
+        <p>This is where I reside. Nice view ain't it</p>
+        
+      <div id="example-17-content" class="gmap">
+        <div class="gmap-title">Address:</div>
+        <div class="gmap-addr">
+          <div>1208 Bergen Avenue</div>
+          <div>Brooklyn, NY 11234</div>
+        </div>
+        
+        <div class="gmap-bottom">
+          <div>Get directions: <a href="javascript:void(null);">To here</a> - <a href="javascript:void(null);">From here</a></div>
+          <div><a href="javascript:void(null);">Search nearby</a> - <a href="javascript:void(null);">Save to My Maps</a></div>
+          <div><a href="javascript:void(null);">Edit</a></div>
+        </div>
+        <a href="javascript:void($('#example17').btOff());"><img src="demofiles/close.gif" alt="close" width="12" height="12" class="gmap-close" /></a>
+      </div>
+
+        <div class="source">
+          <div class="js">$('#example-17-content').hide();
+$('#example17').bt({
+  positions: 'top',
+  contentSelector: "$('#example-17-content')", /*hidden div*/
+  trigger: 'click',
+  width: 220,
+  centerPointX: .9,
+  spikeLength: 65,
+  spikeGirth: 40,
+  padding: 15,
+  cornerRadius: 25,
+  fill: '#FFF',
+  strokeStyle: '#ABABAB',
+  strokeWidth: 1
+});</div>
+        </div>
+      </div>
+    </div>

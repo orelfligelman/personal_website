@@ -1,0 +1,63 @@
+<h1>Listing videos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @videos.each do |video| %>
+      <tr>
+        <td><%= link_to 'Show', video %></td>
+        <td><%= link_to 'Edit', edit_video_path(video) %></td>
+        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Video', new_video_path %>
+
+<div class="example" id="hulu">
+      <h3>Orel Learns Much Foundation Presents: </h3>
+      <div class="ie-fix"><div type="text" id="hulu-target" class="target">AJAX</div></div>
+      <div id="hulu-content">
+        <b>OrelPresents:</b> AJAX and Eternity<br />
+        Season 1, Ep. 1 (00:48)<br />
+        Air date: 05/20/2009  |  Rated: TV-14  |  ☆☆☆☆☆<br />
+        <hr />
+        In this episode, I'll discuss the idea behind Asynchronous Javascript, its history, its current implementation, and how to acheive eternal web development salvation
+      </div>
+      <div class="desc">
+        <p><a href="https://resume.creddle.io/resume/5gi4t3n016i">My Resume</a> style. If you would like to hire me to do things, please click on this link and verify the things I have done are the things that you seek</p>
+        <div class="source">
+          <div class="js">$('#hulu-content').hide();
+$('#hulu-target').bt({
+  contentSelector: "$('#hulu-content')",
+  positions: ['right', 'left'],
+  fill: '#F4F4F4',
+  strokeStyle: '#666666', 
+  spikeLength: 20,
+  spikeGirth: 10,
+  width: 350,
+  overlap: 0,
+  centerPointY: 1,
+  cornerRadius: 0, 
+  cssStyles: {
+    fontFamily: '"Lucida Grande",Helvetica,Arial,Verdana,sans-serif', 
+    fontSize: '12px',
+    padding: '10px 14px'
+  },
+  shadow: true,
+  shadowColor: 'rgba(0,0,0,.5)',
+  shadowBlur: 8,
+  shadowOffsetX: 4,
+  shadowOffsetY: 4
+});</div>
+        </div>
+      </div>
+    </div>

@@ -1,0 +1,38 @@
+<h1>Listing madlibs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @madlibs.each do |madlib| %>
+      <tr>
+        <td><%= link_to 'Show', madlib %></td>
+        <td><%= link_to 'Edit', edit_madlib_path(madlib) %></td>
+        <td><%= link_to 'Destroy', madlib, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Madlib', new_madlib_path %>
+
+  
+    <div class="example" id="customizing-triggers-2">
+    <h3>Customizing triggers 2</h3>
+    <div class="ie-fix"><input type="text" id="example8" title="Nothing Dirty Please" value="Enter a Noun" class="alt-target" /></div>
+    <div class="desc">
+    <p>Enter a noun</p>
+    <div class="source">
+      <div class="js">$('#example8').bt({
+  trigger: ['keyup', 'blur'],
+  positions: ['right']
+});</div>
+   </div>
+    </div>
+    </div>
