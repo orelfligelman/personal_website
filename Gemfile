@@ -36,6 +36,6 @@ gem 'spring',        group: :development
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-gem 'debugger'
+# gem 'debugger'
 gem 'carrierwave'
 gem 'google_drive'
